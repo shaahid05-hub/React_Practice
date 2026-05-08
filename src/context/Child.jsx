@@ -1,8 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { context } from './UserList'
 
 function Child() {
     let user = useContext(context)
+    // let search = useMemo()
+
     return (
         <>
 
@@ -12,13 +14,15 @@ function Child() {
 
                     <div className='card-header'>
                         <h4 className='text-center'>User Details</h4>
+                        <input type="text" className='col-4' />
                     </div>
+
 
                     <div className='card-body'>
                         <table className='table table-striped table-hover table-bordered table-sm' style={{tableLayout:"fixed",width: "100%"}}>
                             <thead className='table-dark text-center'>
                                 <tr>
-                                    <th>ID</th>
+                                    <th>Serial Number</th>
                                     <th>FirstName</th>
                                     <th>Age</th>
                                     <th>Gender</th>

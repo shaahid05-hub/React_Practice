@@ -3,27 +3,27 @@ import Child from './Child'
 import axios from 'axios'
 
 export let context = createContext()
-
 function UserList() {
 
-    let [user,setUser] = useState([])
-async function api() {
-    let {data} = await axios.get('https://dummyjson.com/users')
-    setUser(data.users || [])
-}
+    let [user, setUser] = useState([])
+  
 
-useEffect(()=>{
-    api()
-},[])
+    useEffect(() => {
+          async function api() {
+        let { data } = await axios.get('https://dummyjson.com/users')
+        setUser(data.users)
+    }
+        api()
+    },[])
 
-  return (
-    <>
-    <context.Provider value={user}>
-        <Child/>
-    </context.Provider>
+    return (
+        <>
+            <context.Provider value={user}>
+                <Child />
+            </context.Provider>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default UserList

@@ -20,7 +20,7 @@ function Products_List() {
         }
         dataApi()
     }, [])
-
+ 
     useEffect(() => {
         async function proApi() {
             let url;
@@ -54,7 +54,7 @@ function Products_List() {
 
     return (
         <>
-            <div className="container">
+            <div className="container pad">
                 <div className="row justify-content-center">
                     <div className=" col-4">
                         <input type="text" className='form-control border border-info text-center' placeholder='Search' value={search}
@@ -84,20 +84,20 @@ function Products_List() {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="row justify-content-between my-5">
+                    <div className="row justify-content-between my-5"> 
  
                         {
                             products.map(i =>
 
                                 <div className="col-4 my-4 d-flex flex-column" key={i.id}>
-                                    <NavLink to={`/products/{i.id}`} className='nav-link'>
+                                    <NavLink to={`/products/${i.id}`} className='nav-link'>
                                         <div className=" container card h-100 " >
                                             <img src={i.thumbnail} alt="" style={{ height: "350px", objectFit: "cover" }} />
                                             <h2 className='text-center' style={{ minHeight: '80px' }}>{i.title}</h2>
                                             <p style={{ minHeight: "60px" }} className='px-1'>{i.description.slice(0, 200) + '...'}</p>
                                             <div className='row justify-content-evenly mb-4'>
-                                                <button className="btn btn-primary w-auto btn-outline-dark">Add to Cart</button>
-                                                <button className="btn btn-primary w-auto btn-outline-dark">Details</button>
+                                                {/* <button className="btn btn-primary w-auto btn-outline-dark">Add to Cart</button> */}
+                                                <button className="btn btn-primary w-auto btn-outline-dark px-5">Details</button>
                                             </div>
                                         </div>
                                     </NavLink>

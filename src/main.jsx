@@ -1,16 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-// import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/Header.jsx'
-import Cards from './components/Cards.jsx'
-import Footer from './components/Footer.jsx'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
+import { createRoot } from 'react-dom/client'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import { Provider } from 'react-redux'
+import Store from './Store'
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Header/>
-    <Cards/>
-    <Footer/>
-  </StrictMode>
+<Provider store={Store}>
+   <BrowserRouter>
+    <App/>
+   </BrowserRouter>
+</Provider>
 )
