@@ -13,7 +13,7 @@ let cartSlice = createSlice({
             let item = action.payload
             console.log(item);
             let existP = state.find(pro=>pro.id == item.id)
-            if (existP) {
+            if ( existP ) {
                 existP.quantity += 1 
             }
             else {
