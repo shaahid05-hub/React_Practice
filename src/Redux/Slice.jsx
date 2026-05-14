@@ -4,8 +4,8 @@ import { createSlice } from "@reduxjs/toolkit"
         name:'count',
         initialState:0,
         reducers:{
-            INC: (state,action) => (state+1),
-            DEC: (state,action) => (state-1)
+            INC: ( state,action ) => (state+1),
+            DEC: ( state,action ) => (state-1)
         }
     })
 
