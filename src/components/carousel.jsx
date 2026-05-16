@@ -11,7 +11,7 @@ export default function Carousel() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="https://images.pexels.com/photos/5622862/pexels-photo-5622862.jpeg" className="d-block w-100 " height={"650px"} width={'100%'} alt="..."/>
+      <img src="https://images.pexels.com/photos/5622862/pexels-photo-5622862.jpeg" className="d-block w-100" height={"650px"} width={'100%'} alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="https://images.pexels.com/photos/5868241/pexels-photo-5868241.jpeg" className="d-block w-100" height={"650px"} width={'100%'} alt="..."/>
