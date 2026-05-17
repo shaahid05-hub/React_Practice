@@ -6,7 +6,7 @@ function Footer() {
       <h5 >Acheivers IT</h5>
       <h5>Devwares</h5>
       <p>High quality resources for developers</p>
-      <p >© 2020 All rights reserved</p>
+      <p>© 2020 All rights reserved</p>
     </div>
   )
 }
