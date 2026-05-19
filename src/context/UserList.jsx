@@ -5,7 +5,7 @@ import axios from 'axios'
 export let context = createContext()
 function UserList() {
 
-    let [user,setUser] = useState([])
+    let [user, setUser] = useState([])
   
 
     useEffect(() => {
