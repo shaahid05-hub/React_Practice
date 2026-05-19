@@ -13,7 +13,7 @@ function Child() {
                 <div className='card shadow'>
 
                     <div className='card-header'>
-                        <h4 className='text-center '>User Details</h4>
+                        <h4 className='text-center'>User Details</h4>
                         <input type="text" className='col-4' />
                     </div>
 
