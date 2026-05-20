@@ -5,7 +5,7 @@ function Header() {
   let catv = useSelector(state=> state.cart)
   return (
     <>
-      <div className='bg-warning p-3 position-fixed start-0 end-0 top-0 z-3'>
+      <div className=' bg-warning p-3 position-fixed start-0 end-0 top-0 z-3'>
         <div className=''>
           <ul className="nav justify-content-evenly">
             <li className="nav-item">
