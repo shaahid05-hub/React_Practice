@@ -9,7 +9,7 @@ export default function Carousel() {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div className="carousel-inner ">
+  <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="https://images.pexels.com/photos/5622862/pexels-photo-5622862.jpeg" className="d-block w-100" height={"650px"} width={'100%'} alt="..."/>
     </div>
